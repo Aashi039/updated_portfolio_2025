@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aashith Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar glass">
+    <h1 class="logo">Aashith Portfolio</h1>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </header>
+  <div class="blobs">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Aashith Profile" class="profile-pic" />
+      <h2>Hello, I'm <span class="name">Aashith M</span></h2>
+      <p class="typing-text">Web Developer | ML Enthusiast | Automation Explorer</p>
+    </div>
+  </section>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/aashith-m-68a55423b" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/Aashi039" target="_blank" aria-label="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    </a>
+  </div>
+  
+
+  <section id="about" class="section slide-up">
+    <h2>About Me</h2>
+    <p>
+      Enthusiastic and versatile individual with a keen appetite for acquiring new knowledge and applying it effectively. Experienced in automation, web development, and machine learning. Known for leading teams, managing projects, and delivering solutions through innovation and proactive leadership.
+    </p>
+    <p class="dob"> Date of Birth: <strong>28/09/2003</strong></p>
+  </section>
+  <!-- Education -->
+<section id="education" class="section slide-up">
+  <h2>Education</h2>
+  <div class="info-card">
+    <h3>Sathyabhama Institute of Science and Technology</h3>
+    <p>B.E. Computer Science (Data Science) — 2021 - Present</p>
+    <p>CGPA: 7.4 (Pursuing)</p>
+  </div>
+  <div class="info-card">
+    <h3>Sethu Bhaskara Matric Hr. Sec. School</h3>
+    <p>SSLC: 82.2% (2019)</p>
+    <p>HSC: 83.1% (2021)</p>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section slide-up">
+  <h2>Experience</h2>
+  <div class="info-card">
+    <h3>Software Developer Trainee</h3>
+    <p><strong>Team Tweaks Pvt Ltd</strong> | June 14, 2024 – July 14, 2024</p>
+    <ul>
+      <li>Worked on Node.js, Angular, MongoDB stack</li>
+      <li>Built APIs, enhanced UI with Angular</li>
+      <li>Integrated MongoDB for backend</li>
+    </ul>
+  </div>
+  <div class="info-card">
+    <h3>Automation & Innovation Intern</h3>
+    <p><strong>Sundaram Business Services</strong> | Feb 21 – Mar 31, 2025</p>
+    <ul>
+      <li>Developed Power Automate Workflows</li>
+      <li>Improved process efficiency with automation</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates" class="section slide-up">
+  <h2>Certificates</h2>
+  <div class="certificates-grid">
+    <div class="certificate-card" onclick="openCertificate('cert1.pdf', 'NASSCOM - Digital 101 Journey')">📄 NASSCOM - Digital 101</div>
+    <div class="certificate-card" onclick="openCertificate('cert2.jpg', 'MATLAB for Data Processing & Visualization')">📄 MATLAB - Data Processing</div>
+    <div class="certificate-card" onclick="openCertificate('cert3.jpg', 'Machine Learning on MATLAB')">📄 MATLAB - ML</div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div id="certificateModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="certificateImg">
+  <div id="caption"></div>
+</div>
+  <section id="projects" class="section slide-up">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">🧠 Capsule Notion (Ensemble Learning)<br>Medical condition predictor using ensemble ML algorithms.</div>
+      <div class="project-card">📈 Grocery Sales Prediction<br>Machine learning model for forecasting retail sales.</div>
+      <div class="project-card">🤖 Chatbot with Flask<br>Flask + MongoDB chatbot with HTML/CSS frontend, built during internship.</div>
+      <div class="project-card">⚙️ Power Automate Workflows<br>Business process automation using Microsoft Power Automate.</div>
+    </div>
+  </section>
+
+  <section id="skills" class="section slide-up">
+    <h2>skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">🐍 Python</div>
+      <div class="skill-card">🟢 Node.js</div>
+      <div class="skill-card">🅰️ Angular</div>
+      <div class="skill-card">🍃 MongoDB</div>
+      <div class="skill-card">🤖 Machine Learning</div>
+      <div class="skill-card">📊 Power BI</div>
+      <div class="skill-card">🔁 Power Automate</div>
+      <div class="skill-card">📈 Tableau</div>
+      <div class="skill-card">🌐 HTML/CSS</div>
+      <div class="skill-card">⚗️ Flask</div>
+    </div>
+    
+  </section>
+
+  <section id="contact" class="section slide-up">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: aashith53@gmail.com<br>Location: Chennai</p>
+  </section>
+
+  <footer class="fade-in">
+    <p>© 2025 Aashith. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
